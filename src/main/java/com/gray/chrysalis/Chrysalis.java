@@ -1,6 +1,8 @@
 package com.gray.chrysalis;
 
 import com.gray.chrysalis.item.ModItems;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
@@ -22,8 +24,13 @@ public class Chrysalis {
     public static final String MODID = "chrysalis";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-        NeoForge.EVENT_BUS.register(this);
-        ModItems.register(modEventBus);
+        public Chrysalis(IEventBus modEventBus, ModContainer modContainer)
+        { NeoForge.EVENT_BUS.register(this);
+            ModItems.register(modEventBus);
+
+        }
+
+
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
