@@ -1,4 +1,4 @@
-package com.gray.chrysalis.items.curios;
+package com.gray.chrysalis.item.curios;
 import com.google.common.collect.LinkedHashMultimap;
 import com.google.common.collect.Multimap;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
