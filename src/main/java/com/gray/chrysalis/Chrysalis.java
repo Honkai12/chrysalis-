@@ -15,7 +15,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraft.client.Minecraft;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Chrysalis.MODID)
 public class Chrysalis {
@@ -24,7 +23,7 @@ public class Chrysalis {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
         NeoForge.EVENT_BUS.register(this);
-        ModItems.
+        ModItems.register(modEventBus);
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
