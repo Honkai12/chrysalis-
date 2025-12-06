@@ -25,8 +25,8 @@ public class Chrysalis {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
         public Chrysalis(IEventBus modEventBus, ModContainer modContainer)
-        { NeoForge.EVENT_BUS.register(this);
-            ModItems.register(modEventBus);
+        { // NeoForge.EVENT_BUS.register(this);
+            //ModItems.register(modEventBus);
 
         }
 
