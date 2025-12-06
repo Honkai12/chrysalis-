@@ -1,6 +1,7 @@
 package com.gray.chrysalis.item;
 
 import com.gray.chrysalis.Chrysalis;
+import com.gray.chrysalis.item.curios.DeepBlueDormantCurio;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
