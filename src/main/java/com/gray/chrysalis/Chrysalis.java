@@ -1,6 +1,7 @@
 package com.gray.chrysalis;
 
 import com.gray.chrysalis.item.ModItems;
+import net.neoforged.bus.EventBus;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.common.NeoForge;
@@ -26,7 +27,7 @@ public class Chrysalis {
     public static final Logger LOGGER = LogUtils.getLogger();
         public Chrysalis(IEventBus modEventBus, ModContainer modContainer)
         { // NeoForge.EVENT_BUS.register(this);
-            //ModItems.register(modEventBus);
+          ModItems.register(modEventBus);
 
         }
 
