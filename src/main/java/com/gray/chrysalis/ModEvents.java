@@ -13,7 +13,7 @@ import top.theillusivec4.curios.api.type.capability.ICurio;
 
 import java.util.function.Predicate;
 
-@EventBusSubscriber(modid = Chrysalis.MODID,value = Dist.DEDICATED_SERVER)
+@EventBusSubscriber(modid = Chrysalis.MODID)
 public class ModEvents {
     @SubscribeEvent
     private static void curioDropRules(DropRulesEvent event){

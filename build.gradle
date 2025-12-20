@@ -136,6 +136,7 @@ dependencies {
         implementation "dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}"
         implementation "curse.maven:geckolib-388172:6304958"
         implementation "curse.maven:aces-spell-utils-1299492:7196103"
+        implementation "curse.maven:farmers-delight-398521:6917256"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
