@@ -34,6 +34,11 @@ repositories {
 
     maven { url = "https://cursemaven.com" }
 
+    maven {
+        url "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
+        content {
+            includeGroup "com.klikli_dev"
+        } }
     }
 
 base {
@@ -137,6 +142,8 @@ dependencies {
         implementation "curse.maven:geckolib-388172:6304958"
         implementation "curse.maven:aces-spell-utils-1299492:7196103"
         implementation "curse.maven:farmers-delight-398521:6917256"
+        implementation "curse.maven:databank-1181408:7316426"
+        implementation ("com.klikli_dev:modonomicon-${minecraft_version}-neoforge:${modonomicon_version}"){transitive=false}
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

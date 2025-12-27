@@ -2,6 +2,7 @@ package com.gray.chrysalis.item;
 
 import com.gray.chrysalis.Chrysalis;
 import com.gray.chrysalis.item.curios.DeepBlueDormantCurio;
+import com.gray.chrysalis.item.curios.OvergrownJadeDormantCurio;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -15,7 +16,7 @@ public class ModItems {
 
     // dormant deep blue
     public static final Supplier<CurioBaseItem> DEEP_BLUE_DORMANT_CURIO = ITEMS.register("deep_blue_dormant", DeepBlueDormantCurio::new);
-
+    public static final Supplier<CurioBaseItem> OVERGROWN_JADE_DORMANT_CURIO = ITEMS.register("overgrown_jade_dormant", OvergrownJadeDormantCurio::new);
     public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);}
 }
