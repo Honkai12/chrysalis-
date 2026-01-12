@@ -1,9 +1,7 @@
 package com.gray.chrysalis.item;
 
 import com.gray.chrysalis.Chrysalis;
-import com.gray.chrysalis.item.curios.DeepBlueDormantCurio;
-import com.gray.chrysalis.item.curios.OvergrownJadeDormantCurio;
-import com.gray.chrysalis.item.curios.ThunderingDrakeDormantCurio;
+import com.gray.chrysalis.item.curios.*;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,7 +17,13 @@ public class ModItems {
     public static final Supplier<CurioBaseItem> OVERGROWN_JADE_DORMANT_CURIO = ITEMS.register("overgrown_jade_dormant", OvergrownJadeDormantCurio::new);
    // dormant thundering drake
    public static final Supplier<CurioBaseItem> THUNDERING_DRAKE_DORMANT_CURIO = ITEMS.register("thundering_drake_dormant", ThunderingDrakeDormantCurio::new);
+// dormant shattered Sanguine
+public static final Supplier<CurioBaseItem> SHATTERED_SANGUINE_DORMANT_CURIO = ITEMS.register("shattered_sanguine_dormant", ShatteredSanguineDormantCurio::new);
+// dormant astral friend
+public static final Supplier<CurioBaseItem> ASTRAL_FRIEND_DORMANT_CURIO = ITEMS.register("astral_friend_dormant", AstralFriendDormantCurio::new);
+// dormant hellbound muse
+public static final Supplier<CurioBaseItem> HELLBOUND_MUSE_DORMANT_CURIO = ITEMS.register("hellbound_muse_dormant", HellboundMuseDormantCurio::new);
 
-    public static void register(IEventBus eventBus){
+public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);}
 }

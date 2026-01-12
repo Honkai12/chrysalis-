@@ -12,15 +12,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import top.theillusivec4.curios.api.SlotContext;
 
-public class ThunderingDrakeDormantCurio extends CurioBaseItem {
-    public ThunderingDrakeDormantCurio() {
+public class HellboundMuseDormantCurio extends CurioBaseItem {
+    public HellboundMuseDormantCurio() {
         super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant().rarity(Rarity.RARE));
     }
 
     @Override
     public Multimap<Holder<Attribute>, AttributeModifier> getAttributeModifiers(SlotContext slotContext, ResourceLocation id, ItemStack stack) {
         Multimap<Holder<Attribute>, AttributeModifier> attr = LinkedHashMultimap.create();
-        attr.put(AttributeRegistry.LIGHTNING_SPELL_POWER, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        attr.put(AttributeRegistry.FIRE_SPELL_POWER, new AttributeModifier(id, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return attr;
     }
 }
