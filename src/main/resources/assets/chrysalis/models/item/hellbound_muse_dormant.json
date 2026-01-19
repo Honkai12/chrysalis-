@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chrysalis:item/astral_friend_dormant"
+    "layer0": "chrysalis:item/hellbound_muse_dormant"
   }
 }

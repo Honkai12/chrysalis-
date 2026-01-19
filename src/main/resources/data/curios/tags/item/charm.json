@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "chrysalis:deep_blue_dormant"
+    "chrysalis:deep_blue_dormant",
+    "chrysalis:overgrown_jade_dormant",
+    "chrysalis:astral_friend_dormant",
+    "chrysalis:thundering_drake_dormant",
+    "chrysalis:shattered_sanguine_dormant",
+    "chrysalis:hellbound_muse_dormant"
   ]
 }
