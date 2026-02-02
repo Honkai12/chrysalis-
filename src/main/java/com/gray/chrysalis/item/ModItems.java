@@ -3,7 +3,9 @@ package com.gray.chrysalis.item;
 import com.gray.chrysalis.Chrysalis;
 import com.gray.chrysalis.item.curios.*;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -23,7 +25,9 @@ public static final Supplier<CurioBaseItem> SHATTERED_SANGUINE_DORMANT_CURIO = I
 public static final Supplier<CurioBaseItem> ASTRAL_FRIEND_DORMANT_CURIO = ITEMS.register("astral_friend_dormant", AstralFriendDormantCurio::new);
 // dormant hellbound muse
 public static final Supplier<CurioBaseItem> HELLBOUND_MUSE_DORMANT_CURIO = ITEMS.register("hellbound_muse_dormant", HellboundMuseDormantCurio::new);
-
+//darkest prism
+public static final DeferredItem<Item> DARKEST_PRISM = ITEMS.register("darkest_prism",
+        ()-> new Item(new Item.Properties()));
 public static void register(IEventBus eventBus){
     ITEMS.register(eventBus);}
 }
